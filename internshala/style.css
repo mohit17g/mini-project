@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  border: 1px solid blue;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 20px;
+  align-items: center;
+}
+
+.logo {
+  color: red;
+  font-style: italic;
+}
+
+.inside {
+  display: flex;
+  position: absolute;
+  bottom: 260px;
+  left: 350px;
+}
+
+.first {
+  background-color: white;
+  padding: 7px 20px;
+}
+
+.first1 {
+  border-radius: 5px 0 0 5px;
+}
+
+.option {
+  border-style: none;
+}
+
+.second {
+  padding-right: 40px;
+}
+
+.second1 {
+  border-radius: 0 5px 5px 0;
+}
+
+.third {
+  background-color: orange;
+  padding: 7px 22px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.box {
+  background-color: white;
+  height: 200px;
+  width: 252px;
+  position: absolute;
+  bottom: 60px;
+  left: 630px;
+  padding: 10px 20px;
+}
+
+.small-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.cart {
+  display: flex;
+  gap: 10px;
+}
+
+.small-text {
+  font-size: 0.8rem;
+}
+
+.done {
+  border: 1px solid blue;
+  border-radius: 5px;
+  text-align: center;
+  width: 100px;
+  margin: 10px 52px;
+  color: blue;
+}
+
+.vimage {
+  position: absolute;
+  left: 816px;
+  bottom: 105px;
+}
+
+.row2 {
+  display: flex;
+  max-width: 800px;
+  margin-inline: auto;
+  margin-block: 20px;
+  gap: 10px;
+}
+
+.left {
+  width: 50%;
+  position: relative;
+}
+
+.right {
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+  gap: 10px;
+  row-gap: 15px;
+}
+
+.details {
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.circle {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.para1 {
+  padding-top: 5px;
+}
+
+.para2 {
+  padding-bottom: 5px;
+}
+
+.list {
+  display: flex;
+  gap: 30px;
+  padding-left: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.about {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.last {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.last-left {
+  padding-left: 25px;
+  padding-top: 10px;
+}
+
+.last-right {
+  padding-top: 10px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
