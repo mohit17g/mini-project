@@ -1,0 +1,38 @@
+.container {
+  width: 500px;
+  height: 500px;
+  background-color: cyan;
+  margin-top: 100px;
+  margin-left: 442px;
+  color: white;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-property: transform, background-color;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  position: absolute;
+  top: 250px;
+  left: 600px;
+  color: white;
+}
+
+.original {
+  background-color: orangered;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-property: transform, background-color;
+}
+
+.original:hover {
+  transform: scale(0.6);
+  background-color: green;
+}
+
+.container:hover {
+  transform: scale(0.6);
+  background-color: greenyellow;
+}
