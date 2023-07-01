@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations</title>
+    <style>
+      :root {
+        --translate-distance: 200px;
+      }
+
+      * {
+        margin: 0;
+      }
+      .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+      }
+
+      .big-box {
+        width: 400px;
+        height: 400px;
+        /* border: 2px solid white; */
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        animation: circles 2s infinite;
+      }
+
+      @keyframes circles {
+        0% {
+          transform: translate(0, 0);
+        }
+        25% {
+          transform: translate(0, var(--translate-distance));
+          background-color: red;
+          /* transform: scale(1.2); */
+        }
+        50% {
+          transform: translate(
+            var(--translate-distance),
+            var(--translate-distance)
+          );
+          background-color: green;
+          /* transform: scale(1.4); */
+        }
+        75% {
+          transform: translate(var(--translate-distance), 0);
+          background-color: yellow;
+          /* transform: scale(1.6); */
+        }
+        100% {
+          transform: translate(0, 0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="big-box">
+        <div class="box"></div>
+      </div>
+    </div>
+  </body>
+</html>
